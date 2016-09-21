@@ -24,7 +24,9 @@
 		}
 
 	body {
-		background: _palette(bg);
+//		background: _palette(bg);
+		background:url(../../images/bg.png) center top fixed;
+		
 
 		// Prevents animation/transition "flicker" on page load.
 		// Automatically added/removed by js/main.js.
