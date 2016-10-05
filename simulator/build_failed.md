@@ -1,6 +1,6 @@
 # 転送時に「Build Failed」と表示される。Bundle identifierが重複している場合
 
-## エラーの内容を確認してきます
+## エラーの内容を確認します
 
 iPhoneアプリの転送時に「Build Failed」と表示されて、iPhoneへのアプリ転送が失敗する場合には、Bundle identifierが重複している場合があります。
 次の手順で確認してみてください。
@@ -29,4 +29,5 @@ The app ID "Swift-Beginners.MyJanken" cannot be registered to your development t
 
 <img src="images/simulator_00002.png" alt="［Bundle identifier］の設定を変更">
 
-［Bundle identifier］が、書籍の「Swift-Beginners」のままになっていないか確認してください。まだ、アプリを公開していない開発環境でも［Bundle identifier］は重複しないIDである必要があります。ホームページのドメインなど重複しない名称にする必要があります。
+［Bundle identifier］が、書籍の「Swift-Beginners」のままになっていないか確認してください。まだ、アプリを公開していない開発環境でも［Bundle identifier］は重複しないIDである必要があります。  
+Apple IDやホームページのドメインなど重複しない名称を設定する必要があります。
