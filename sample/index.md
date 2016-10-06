@@ -7,7 +7,7 @@
 ダウンロードしていただくファイルは，ZIP形式の圧縮ファイルです。解凍してお使いください。ダウンロードにミスがあると正しく解凍できませんので、よくお確かめください。
 
 <strong>ダウンロード</strong>
-[『これからつくる iPhoneアプリ開発入門 ~Swiftではじめるプログラミングの第一歩~』サンプルアプリ](https://swiftbg.github.io/swiftbook/sample/iPhoneSwift_SampleApp.zip)
+[『これからつくる iPhoneアプリ開発入門 ~Swiftではじめるプログラミングの第一歩~』サンプルアプリ（6.6MB）](https://swiftbg.github.io/swiftbook/sample/iPhoneSwift_SampleApp.zip)
 
 <strong>注意事項</strong>
 
