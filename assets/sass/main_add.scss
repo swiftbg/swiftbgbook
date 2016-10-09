@@ -1,6 +1,12 @@
 @charset "UTF-8";
 @import 'config';
 
+// 画像編
+img{
+  width:100%;
+  height:auto;
+}
+
 #wrapper{
   background: url(/swiftbook/images/top_cover.png) no-repeat 90% 100px;
   background-size: 30%;
