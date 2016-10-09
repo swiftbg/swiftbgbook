@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import 'config';
 
+body{
+	font-family: "Source Code Pro","メイリオ","Meiryo","ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","HGS明朝E","ＭＳ Ｐ明朝",serif,verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+	color: #555;
+}
+
 // 画像編
 img{
   max-width:100%;
