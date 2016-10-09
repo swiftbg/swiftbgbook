@@ -6,12 +6,93 @@ img{
   width:100%;
   height:auto;
 }
-
-#wrapper{
-	background: url(/swiftbook/images/top_cover.png) no-repeat 80% 0px;
-	background-size: 18%;	
-}
+//
+//#wrapper{
+//	background: url(/swiftbook/images/top_cover.png) no-repeat 80% 0px;
+//	background-size: 18%;	
+//}
 
 #header-title{
 	width: 60%;
+}
+
+
+//================================================
+// ヨメレバ　カスタマイズ
+//================================================
+//  
+// 次のCSSフォーマットに対応している。
+// 画像大　で取得（高い解像度への対応）
+// レイアウト			amazlet風-3
+// ショップアイコン　なし
+// 
+.booklink-box{
+	// 高い解像度への対応
+	.booklink-image{
+		width: 121px;
+	}
+  .booklink-name{
+    a {
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+    .booklink-powered-date a{
+      font-size: 0.8rem;      
+    }
+  }
+  .shoplinkamazon,.shoplinkkindle,.shoplinkrakuten{
+		background: none !important;
+		margin: 0 5px 5px 0 !important;
+		padding:0 !important;
+    display: inline-block;
+    a {
+      padding: 12px 8px;
+      display: inline-block;
+      margin-bottom: 3px;
+      text-decoration: none;
+      font-weight: bold;
+      text-decoration: none;
+      color: white !important;
+      font-size: 1rem;
+      &:hover{
+        color: white !important;
+      }
+    }
+  }
+  .shoplinkamazon a {
+    background-color: #232f3e ;
+    &:hover{
+      background-color: lighten(#232f3e,15%) ;      
+    }
+		&:before {
+			content: " \f270";
+			font-family: FontAwesome;
+			font-size: 1.25rem;
+			margin-right: 10px;
+		}		
+  }
+  .shoplinkkindle a {
+    background-color: #ED6C18 ;
+    &:hover{
+      background-color: lighten(#ED6C18,10%) ;      
+    }
+		&:before {
+			content: " \f10a";
+			font-family: FontAwesome;
+			font-size: 1.25rem;
+			margin-right: 10px;
+		}				
+  }
+  .shoplinkrakuten a {
+      background-color: #bf0000;
+    &:hover{
+      background-color: lighten(#bf0000,10%) ;      
+    }
+		&:before {
+			content: " \f25d";
+			font-family: FontAwesome;
+			font-size: 1.25rem;
+			margin-right: 10px;			
+		}		
+  }
 }
