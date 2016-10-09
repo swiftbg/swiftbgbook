@@ -30,8 +30,10 @@ img{
 }
 
 #wrapper>*>.inner {
-	font-size: 1.2rem;
 	max-width: 1024px;
+}
+#main .inner {
+	font-size: 1.2rem;
 }
 
 //================================================
@@ -50,7 +52,7 @@ img{
 	}
   .booklink-name{
     a {
-      font-size: 1rem;
+      font-size: 0.875rem;
       line-height: 1.4;
     }
     .booklink-powered-date a{
