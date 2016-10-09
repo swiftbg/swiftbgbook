@@ -31,6 +31,7 @@ img{
 
 #wrapper>*>.inner {
 	max-width: 1024px;
+	padding: 0 1.0rem;
 }
 #main .inner {
 	font-size: 1.2rem;
@@ -117,7 +118,7 @@ img{
 }
 //================================================
 .home #wrapper {
-	background: url(/swiftbook/images/top_cover.png) no-repeat 87% 0;
+	background: url(/swiftbook/images/top_cover.png) no-repeat 86% 0 5px;
 	background-size: 22%;
 }
 
