@@ -111,6 +111,30 @@ img{
 		font-weight: normal;
 	}
 }
+
+//================================================
+// main
+//================================================
+#main{
+	.inner{
+		h1 {
+			position: relative;
+			padding-bottom: .5em;
+			border-bottom: 4px solid #ccc;
+		}
+		h1::after {
+			position: absolute;
+			bottom: -4px;
+			left: 0;
+			z-index: 2;
+			content: '';
+			width: 20%;
+			height: 4px;
+			background-color: #3498db;
+		}
+	}
+}
+
 //================================================
 // footer
 //================================================
