@@ -63,7 +63,7 @@ ul.style-none li{
 	}
   .booklink-name{
     a {
-      font-size: 0.875rem;
+      font-size: 1rem;
       line-height: 1.4;
     }
     .booklink-powered-date a{
@@ -126,11 +126,6 @@ ul.style-none li{
 		}		
   }
 }
-//================================================
-.home #wrapper {
-	background: url(/swiftbook/images/top_cover.png) no-repeat 86% 5px;
-	background-size: 22%;
-}
 
 #header-title{
 	width: 60%;
@@ -178,4 +173,20 @@ ul.style-none li{
   padding: 5rem 0 0 0;
 }
 
+//================================================
+// home
+//================================================
+.home #wrapper {
+	background: url(/swiftbook/images/top_cover.png) no-repeat 86% 5px;
+	background-size: 22%;
+	
+	// ヨメレバ
+	.booklink-box{
+		.booklink-name{
+			a {
+				font-size: 0.875rem;
+			}
+		}
+	}
+}
 
