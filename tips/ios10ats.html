@@ -2,18 +2,18 @@
 <html lang="ja">
 	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 		<meta charset="utf-8" />
-		<title>お菓子検索アプリ：iOS10でのATS設定について｜これからつくる iPhoneアプリ開発入門（Swift）</title>
-		<meta name="description" content="書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」のお菓子検索アプリ：iOS10でのATS設定についてを解説しています。">
+		<title>お菓子検索アプリ：iOS9,iOS10でのATS設定について｜これからつくる iPhoneアプリ開発入門（Swift）</title>
+		<meta name="description" content="書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」のお菓子検索アプリ：iOS9,iOS10でのATS設定について解説しています。">
 		<meta name="keywords" content="iPhone,Swift,iOS,アプリ開発,初心者,書籍,本">
 		<link rel="canonical" href="https://swiftbg.github.io/swiftbook/tips/ios10ats.html">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- OGP -->
-		<meta property="og:title" content="お菓子検索アプリ：iOS10でのATS設定について｜これからつくる iPhoneアプリ開発入門（Swift）" />
+		<meta property="og:title" content="お菓子検索アプリ：iOS9,iOS10でのATS設定について｜これからつくる iPhoneアプリ開発入門（Swift）" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://swiftbg.github.io/swiftbook/tips/ios10ats.html" />
 		<meta property="og:image" content="https://swiftbg.github.io/swiftbook/images/OGP.png" />
 		<meta property="og:site_name" content="これからつくる iPhoneアプリ開発入門 Swiftではじめるプログラミングの第一歩 公式サポートサイト" />
-		<meta property="og:description" content="書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」のお菓子検索アプリ：iOS10でのATS設定についてを解説しています。" />
+		<meta property="og:description" content="書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」のお菓子検索アプリ：iOS9,iOS10でのATS設定について解説しています。" />
 		<meta property="fb:app_id" content="1615427068757376" />
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@swift_bg">
@@ -62,21 +62,38 @@
 						<li><a href="elements.html">問い合わせ</a></li>
 						<li><a href="elements.html">執筆陣プロフィール</a></li>
 						<li><a href="elements.html">書評レビューまとめ</a></li>
-						<li><a href="elements.html">書評レビューまとめ</a></li>						
+						<li><a href="elements.html">書評レビューまとめ</a></li>
 					</ul>
 				</nav>
 
 			<!-- Main -->
 				<div id="main">
 					<div class="inner">
-						<h1>お菓子検索アプリ：iOS10でのATS設定について</h1>
+						<h1>お菓子検索アプリ：iOS9,iOS10でのATS設定について</h1>
+						<h2>アプリ申請時はATS設定に注意</h2>
+						<p>本書では、ATS機能を無効化することで、httpサイトへの通信を可能にしました。シミュレータなどの開発環境では問題なく通信ができます。ですが、アプリ申請時の際には、注意が必要です。</p>
+						<p>アプリ申請時には、より厳密に設定を行なう必要があります。ATS機能を有効化して、基本はhttpsでの通信とします。そして、httpで通信したいドメインのみ個別で登録します。</p>
+						
+						<h2>ATS（App Transport Security）の設定を変更</h2>
+						<h3>ATS機能が無効化されているので、有効にします</h3>
+						
+						<p>◎「Allow Arbitrary Loads」の削除<br><img src="./images/ios10ats_00001.png" alt="「Allow Arbitrary Loads」が「YES」となっています。このキーを削除"></p>
+						<p>既に設定済みの場合は、「Allow Arbitrary Loads」が「YES」となっています。このキーを削除するとデフォルト値（NO）となり、ATS機能が有効になります。</p>
+						<h4>削除手順</h4>
+						<ul class="style-none">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
 
-						<p>iOS10で、ATS（App Transfer Security）の設定に変更がありました。<br>iOS9では、ATS機能を無効化することでhttpでも通信を行えるようにしていました。iOS10からはATS機能を有効化して、http通信を行なう場合は、個別に例外としてドメインを登録する必要があります。</p>
+						<h3>http通信を行なうドメインを登録します</h3>
 						
 						
 						
-						
-						
+						<h2>参考ページ</h2>
+						<p><a href="https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html" rel="nofollow">Cocoa Keys | Describes the keys for a bundle's Info.plist file. | Apple Developer</a></p>
 
 						<hr>
 						<div class="booklink-box" style="text-align:left;padding-bottom:20px;font-size:small;/zoom: 1;overflow: hidden;"><div class="booklink-image" style="float:left;margin:0 15px 10px 0;"><a href="http://www.amazon.co.jp/exec/obidos/asin/4797387149/officialsiteswift-22/" target="_blank" rel="nofollow" ><img src="https://images-fe.ssl-images-amazon.com/images/I/51tP8W6KckL.jpg" style="border: none;" /></a></div><div class="booklink-info" style="line-height:120%;/zoom: 1;overflow: hidden;"><div class="booklink-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/asin/4797387149/officialsiteswift-22/" target="_blank" rel="nofollow" >これからつくる iPhoneアプリ開発入門 ~Swiftではじめるプログラミングの第一歩~</a><div class="booklink-powered-date" style="font-size:8pt;margin-top:5px;font-family:verdana;line-height:120%">posted with <a href="http://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail" style="margin-bottom:5px;">藤 治仁,徳弘 佑衣,小林 加奈子,小林 由憲 SBクリエイティブ 2016-10-26    </div><div class="booklink-link2" style="margin-top:10px;"><div class="shoplinkamazon" style="margin:5px 0"><a href="http://www.amazon.co.jp/exec/obidos/asin/4797387149/officialsiteswift-22/" target="_blank" rel="nofollow" >Amazonで探す</a></div><div class="shoplinkkindle" style="margin:5px 0"><a href="http://www.amazon.co.jp/gp/search?keywords=%82%B1%82%EA%82%A9%82%E7%82%C2%82%AD%82%E9%20iPhone%83A%83v%83%8A%8AJ%94%AD%93%FC%96%E5%20~Swift%82%C5%82%CD%82%B6%82%DF%82%E9%83v%83%8D%83O%83%89%83~%83%93%83O%82%CC%91%E6%88%EA%95%E0~&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=officialsiteswift-22" target="_blank" rel="nofollow" >Kindleで探す</a></div><div class="shoplinkrakuten" style="margin:5px 0"><a href="http://c.af.moshimo.com/af/c/click?a_id=640352&p_id=56&pc_id=56&pl_id=637&s_v=b5Rz2P0601xu&url=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14462591%2F" target="_blank" rel="nofollow" >楽天ブックスで探す</a><img src="http://i.af.moshimo.com/af/i/impression?a_id=640352&p_id=56&pc_id=56&pl_id=637" width="1" height="1" style="border:none;"></div>                         	   	  	  	</div></div><div class="booklink-footer" style="clear: left"></div></div>
