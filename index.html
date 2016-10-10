@@ -1,12 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="ja">
-	<head>
+	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 		<meta charset="utf-8" />
 		<title>これからつくる iPhoneアプリ開発入門 Swiftではじめるプログラミングの第一歩 公式サポートサイト</title>
 		<meta name="description" content="iPhoneアプリ開発をこれから初める初心者、初級者向けの書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」（著者：藤 治仁、徳弘 佑衣、小林 加奈子、小林 由憲）の公式サポートサイトです。サンプルアプリのダウンロードや、応用編のテキストが掲載されています。">
 		<meta name="keywords" content="iPhone,Swift,アプリ開発,初心者,書籍,本">
 		<link rel="canonical" href="https://swiftbg.github.io/swiftbook/">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- OGP -->
+		<meta property="og:title" content="これからつくる iPhoneアプリ開発入門 Swiftではじめるプログラミングの第一歩 公式サポートサイト" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://swiftbg.github.io/swiftbook/" />
+		<meta property="og:image" content="https://swiftbg.github.io/swiftbook/images/OGP.png" />
+		<meta property="og:site_name" content="これからつくる iPhoneアプリ開発入門 Swiftではじめるプログラミングの第一歩 公式サポートサイト" />
+		<meta property="og:description" content="iPhoneアプリ開発をこれから初める初心者、初級者向けの書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」（著者：藤 治仁、徳弘 佑衣、小林 加奈子、小林 由憲）の公式サポートサイトです。サンプルアプリのダウンロードや、応用編のテキストが掲載されています。" />
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@swift_bg">
 		<!--[if lte IE 8]><script src="/swiftbook/assets/js/ie/html5shiv.js"></script><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="/swiftbook/assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="/swiftbook/assets/css/ie8.css" /><![endif]-->
@@ -17,6 +26,22 @@
 		var url = "/swiftbook/assets/css/main_add.css?" + new Date().getTime();
 		document.writeln('<link rel="stylesheet" href="' + url + '" />');
 		//]]
+		</script>
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId      : '1615427068757376',
+					xfbml      : true,
+					version    : 'v2.8'
+				});
+			};
+			(function(d, s, id){
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {return;}
+					js = d.createElement(s); js.id = id;
+					js.src = "//connect.facebook.net/en_US/sdk.js";
+					fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
 		</script>
 	</head>
 	<body class="home">
