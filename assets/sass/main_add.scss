@@ -182,8 +182,11 @@ ul.style-none li{
 // home
 //================================================
 .home #wrapper {
-	background: url(/swiftbook/images/top_cover.png) no-repeat 86% 5px;
-	background-size: 22%;
+	
+	#main .inner{
+		background: url(/swiftbook/images/top_cover.png) no-repeat 86% 5px;
+		background-size: 22%;
+	}
 	
 	// ヨメレバ
 	.booklink-box{
