@@ -200,6 +200,10 @@ ul.style-none li{
 //================================================
 @media screen and (max-width: 1024px){
 	max-width: 100%;
+	.home #wrapper {
+		background-position: right 5px 5px;
+		background-size: auto 350px;
+	}
 }
 //================================================
 // max-width: 980px
