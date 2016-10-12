@@ -3,7 +3,7 @@
 	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 		<meta charset="utf-8" />
 		<title>お菓子検索アプリ：iOS10でのATS設定について｜これからつくる iPhoneアプリ開発入門（Swift）</title>
-		<meta name="description" content="書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」のお菓子検索アプリ：iOS10でのATS設定について解説しています。">
+		<meta name="description" content="Swift言語での初心者向けiPhoneアプリ開発の書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」のお菓子検索アプリ：iOS10でのATS設定について解説しています。">
 		<meta name="keywords" content="iPhone,Swift,iOS,アプリ開発,初心者,書籍,本">
 		<link rel="canonical" href="https://swiftbg.github.io/swiftbook/tips/ios10ats.html">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,7 +13,7 @@
 		<meta property="og:url" content="https://swiftbg.github.io/swiftbook/tips/ios10ats.html" />
 		<meta property="og:image" content="https://swiftbg.github.io/swiftbook/images/OGP.png" />
 		<meta property="og:site_name" content="これからつくる iPhoneアプリ開発入門 Swiftではじめるプログラミングの第一歩 公式サポートサイト" />
-		<meta property="og:description" content="書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」のお菓子検索アプリ：iOS10でのATS設定について解説しています。" />
+		<meta property="og:description" content="Swift言語での初心者向けiPhoneアプリ開発の書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」のお菓子検索アプリ：iOS10でのATS設定について解説しています。" />
 		<meta property="fb:app_id" content="1615427068757376" />
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@swift_bg">
@@ -65,7 +65,20 @@
 						<li><a href="elements.html">書評レビューまとめ</a></li>
 					</ul>
 				</nav>
+				
+			<!-- Bread -->
+				<nav id="breadcrumbs">
+					<ol>
+						<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+						<a itemprop="url" href="https://swiftbg.github.io/swiftbook/"><span itemprop="title">ホーム</span></a>
+						</li>
+						<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+						<span itemprop="title">お菓子検索アプリ：iOS10でのATS設定について</span>
+						</li>
+					</ol>
+				</nav>
 
+		
 			<!-- Main -->
 				<div id="main">
 					<div class="inner">
@@ -115,13 +128,13 @@
 						<ul class="style-none">
 							<li>&#9312;「www.sysbird.jp」の前の三角マークをクリックして、▼に変更します。</li>
 							<li>&#9313;プラスマークをクリックして、新しくKeyを追加します。</li>
-							<li>&#9314;追加したKeyに「NSTemporaryExceptionAllowsInsecureHTTPLoads」と入力していきます。これは入力候補が表示されないため、正確に入力していきます。</li>
+							<li>&#9314;追加したKeyに「NSTemporaryExceptionAllowsInsecureHTTPLoads」と入力していきます。これは入力候補が表示されないため、正確に入力していきます。「NSTemporaryExceptionAllowsInsecureHTTPLoads」は、「一時的な例外として、安全ではないHTTPロードを許可します」という意味のKeyです。</li>
 						</ul>
 						
 						<p>◎［Type］と［Value］の設定<br><img src="./images/ios10ats_00007.png" alt="［Type］と［Value］の設定"></p>
 						<ul class="style-none">
 							<li>&#9312;追加したKey「NSTemporaryExceptionAllowsInsecureHTTPLoads」の［Type］を「Boolean」に変更します。</li>
-							<li>&#9313;そして、［Value］（値）を「YES」にします。</li>
+							<li>&#9313;そして、［Value］（値）を「YES」にします。これで、「www.sysbird.jp」ドメインがhttpでも通信できるようになりました。</li>
 						</ul>
 						
 						<p>以上で、プロパティリストの設定が完了しました。</p>
