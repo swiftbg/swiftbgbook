@@ -181,6 +181,11 @@ ul.style-none li{
 //================================================
 #footer {
   padding: 5rem 0 0 0;
+	.inner{
+		h4{
+			font-size: 1.25rem;
+		}
+	}
 }
 
 //================================================
@@ -241,5 +246,7 @@ ul.style-none li{
 	// ヨメレバ
 	.booklink-box .booklink-image{
 		float: none !important;
+    width: 80%;
+    margin: 0 auto !important;		
 	}
 }
