@@ -79,22 +79,56 @@
 						
 						<p>◎「Allow Arbitrary Loads」の削除<br><img src="./images/ios10ats_00001.png" alt="「Allow Arbitrary Loads」が「YES」となっています。このキーを削除"></p>
 						<p>既に設定済みの場合は、「Allow Arbitrary Loads」が「YES」となっています。このキーを削除するとデフォルト値（NO）となり、ATS機能が有効になります。</p>
-						<h4>［削除手順］</h4>
 						<ul class="style-none">
 							<li>&#9312;<img class="mn-icon" src="/swiftbook/iconimages/ProjectNavigator.png" alt="ProjectNavigator">［MyOkashi］プロジェクトを選択します。</li>
 							<li>&#9313;<img class="mn-icon" src="/swiftbook/iconimages/projectAndTargetsListIcon.png" alt="projectAndTargetsListIcon">［project and targets list］ボタンをクリックして、［PROJECT］と［TARGETS］を表示します。</li>
 							<li>&#9314;［TARGETS］で［MyOkashi］を選択します。</li>
-							<li>&#9315;［Info］をクリックします。</li>
+							<li>&#9315;［Info］をクリックして、プロパティリストを表示します。</li>
 							<li>&#9316;「Allow Arbitrary Loads」のマイナスボタンをクリックして、行を削除します。</li>
 						</ul>
 
 						<h3>http通信を行なうドメインを登録します</h3>
 						
-						<p>◎「Allow Arbitrary Loads」の削除<br><img src="./images/ios10ats_00002.png" alt="「Allow Arbitrary Loads」が「YES」となっています。このキーを削除"></p>
+						<p>◎「App Transport Security Settings」へ追加<br><img src="./images/ios10ats_00002.png" alt="「App Transport Security Settings」へ追加"></p>
+						<ul class="style-none">
+							<li>&#9312;「App Transport Security Settings」の前の三角マークをクリックして、▼に変更します。</li>
+							<li>&#9313;プラスマークをクリックして、新しくKeyを追加します。</li>
+						</ul>
+						<p>◎「Exception Domains」を選択<br><img src="./images/ios10ats_00003.png" alt="「Exception Domains」を選択"></p>
+						<ul class="style-none">
+							<li>&#9312;追加したKeyに「Exception Domains」と入力していきます。数文字を入力すると候補から選択できます。「例外のドメイン」示すKeyになります。</li>
+						</ul>
 						
+						<p>◎例外のドメインを設定<br><img src="./images/ios10ats_00004.png" alt="例外のドメインを設定"></p>
+						<ul class="style-none">
+							<li>&#9312;「Exception Domains」の前の三角マークをクリックして、▼に変更します。</li>
+							<li>&#9313;プラスマークをクリックして、新しくKeyを追加します。</li>
+							<li>&#9314;追加したKeyに例外のドメインを設定します。「www.sysbird.jp」と入力します。お菓子検索アプリで、「http://www.sysbird.jp〜」ドメインへアクセスしてデータを取得していますので、ここで例外のドメインとして設定しています。</li>
+						</ul>
 						
+						<p>◎［Type］（データ型）を「Dictionary」へ変更<br><img src="./images/ios10ats_00005.png" alt="［Type］（データ型）を「Dictionary」へ変更"></p>
+						<ul class="style-none">
+							<li>&#9312;「www.sysbird.jp」の［Type］（データ型）を「String」から「Dictionary」へ変更します。</li>
+						</ul>
 						
+						<p>◎「www.sysbird.jp」へKeyを追加<br><img src="./images/ios10ats_00006.png" alt="「www.sysbird.jp」へKeyを追加"></p>
+						<ul class="style-none">
+							<li>&#9312;「www.sysbird.jp」の前の三角マークをクリックして、▼に変更します。</li>
+							<li>&#9313;プラスマークをクリックして、新しくKeyを追加します。</li>
+							<li>&#9314;追加したKeyに「NSTemporaryExceptionAllowsInsecureHTTPLoads」と入力していきます。これは入力候補が表示されないため、正確に入力していきます。</li>
+						</ul>
 						
+						<p>◎［Type］と［Value］の設定<br><img src="./images/ios10ats_00007.png" alt="［Type］と［Value］の設定"></p>
+						<ul class="style-none">
+							<li>&#9312;追加したKey「NSTemporaryExceptionAllowsInsecureHTTPLoads」の［Type］を「Boolean」に変更します。</li>
+							<li>&#9313;そして、［Value］（値）を「YES」にします。</li>
+						</ul>
+						
+						<p>以上で、プロパティリストの設定が完了しました。</p>
+						
+						<h2>シミュレータと実機で動作を確認します</h2>
+						<p>◎シミュレータと実機での動作確認<br><img src="./images/ios10ats_00008.png" alt="シミュレータと実機での動作確認"></p>
+						<p>シミュレータを起動して、お菓子の検索を行いデータが取得されているのを確認します。また、一覧のお菓子をタップして、お菓子紹介のWebページが表示されることも確認します。</p>
 						
 						<h5>参考ページ</h5>
 						<p><a href="https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html" rel="nofollow">Cocoa Keys | Describes the keys for a bundle's Info.plist file. | Apple Developer</a></p>
