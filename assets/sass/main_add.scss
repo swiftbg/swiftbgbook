@@ -52,17 +52,6 @@ ul.style-none li{
 	font-size: 1.25rem; // 20px
 }
 
-nav#breadcrumbs ol li {
-  display: inline;
-  list-style-type: none;
-}
-nav#breadcrumbs ol li:before {
-  content: " > ";
-}
-nav#breadcrumbs ol li:first-child:before {
-  content:"";
-}
-
 //================================================
 // ヨメレバ　カスタマイズ
 //================================================
