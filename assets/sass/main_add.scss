@@ -24,7 +24,6 @@ h4{
 h5{
 	font-size: 1.25rem; // 20px
 }
-
 // 画像編
 img{
   max-width:100%;
@@ -44,12 +43,20 @@ ul.style-none li{
 	font-size: 0.75rem !important;
 }
 
+.clearfix {
+  clear: left after;
+}
+
 #wrapper>*>.inner {
 	max-width: 1024px;
 	padding: 0 1.0rem;
 }
 #main .inner {
 	font-size: 1.25rem; // 20px
+}
+
+.image.left.appicon img, .image.right.appicon img{
+	width: 200px;	
 }
 
 //================================================
