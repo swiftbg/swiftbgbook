@@ -2,18 +2,18 @@
 <html lang="ja">
 	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 		<meta charset="utf-8" />
-		<title>応用編2.大阪弁メッセージアプリ｜これからつくる iPhoneアプリ開発入門（Swift）</title>
-		<meta name="description" content="Swift言語での初心者向けiPhoneアプリ開発の書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」の応用編2.大阪弁メッセージアプリの解説とサンプルアプリダウンロードです。">
+		<title>応用編2.大阪弁iMessageアプリを作ろう｜これからつくる iPhoneアプリ開発入門（Swift）</title>
+		<meta name="description" content="Swift言語での初心者向けiPhoneアプリ開発の書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」の応用編2.大阪弁iMessageアプリの解説とサンプルアプリダウンロードです。">
 		<meta name="keywords" content="iPhone,Swift,iOS,アプリ開発,初心者,書籍,本">
-		<link rel="canonical" href="https://swiftbg.github.io/swiftbook/advanced/jyanken.html">
+		<link rel="canonical" href="https://swiftbg.github.io/swiftbook/advanced/oosaka.html">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- OGP -->
-		<meta property="og:title" content="応用編2.大阪弁メッセージアプリ｜これからつくる iPhoneアプリ開発入門（Swift）" />
+		<meta property="og:title" content="応用編2.大阪弁iMessageアプリを作ろう｜これからつくる iPhoneアプリ開発入門（Swift）" />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://swiftbg.github.io/swiftbook/advanced/jyanken.html" />
+		<meta property="og:url" content="https://swiftbg.github.io/swiftbook/advanced/oosaka.html" />
 		<meta property="og:image" content="https://swiftbg.github.io/swiftbook/images/OGP.png" />
 		<meta property="og:site_name" content="これからつくる iPhoneアプリ開発入門 Swiftではじめるプログラミングの第一歩 公式サポートサイト" />
-		<meta property="og:description" content="Swift言語での初心者向けiPhoneアプリ開発の書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」の応用編2.大阪弁メッセージアプリの解説とサンプルアプリダウンロードです。" />
+		<meta property="og:description" content="Swift言語での初心者向けiPhoneアプリ開発の書籍「これからつくる iPhoneアプリ開発入門 ～Swiftではじめるプログラミングの第一歩～」の応用編2.大阪弁iMessageアプリの解説とサンプルアプリダウンロードです。" />
 		<meta property="fb:app_id" content="1615427068757376" />
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@swift_bg">
@@ -69,18 +69,29 @@
 			<!-- Main -->
 				<div id="main">
 					<div class="inner">
-						<h1>応用編2.大阪弁メッセージアプリ</h1>
-						<h2>これから作るアプリの概要</h2>
-						<p>概要です。</p>
-												
+						<h1>応用編2.大阪弁iMessageアプリを作ろう</h1>
 						<h2>サンプルアプリのダウンロード</h2>
 						<p><a href="">応用編2.大阪弁メッセージアプリのダウンロード（??MB）</a></p>
+						<h2>この章でできるようになること</h2>
+						<p>iOS10の新機能であるiMessageアプリの作り方を学びます。</p>
+						<p>文章をiMessageアプリに入力すると、特定の単語を新しい単語に置き換える処理を行うことにより大阪弁風に文章を変換します。</p>
+						<p>ここでは、TextViewを使って文章入力を行います。<br>また、キーボードをカスタマイズし上部に「Done」ボタンを追加します。完了ボタンをタップされたことにより文章入力を終了します。</p>
+						<p>文章を入力シーンでよく使われるTextViewと、キーボードの上部にボタンを追加するカスタマイズ方法を理解することによって他のアプリへの利用ができるようになります。</p>
+						<p>
+						<a href="#">1-1-1　プロジェクトを作成しよう</a><br>
+						<a href="#">1-1-2　iMessageアプリの仕組みについて理解しよう</a><br>
+						<a href="#">1-1-3　画面を作成しよう</a><br>
+						<a href="#">1-1-4　大阪弁風に変換しよう</a>
+						</p>
 						
-						<h2>プロジェクトファイルの作成</h2>
-						<h2>画面の修正</h2>
-						<h2>プログラムの修正</h2>
+						<h2>1-1-1　プロジェクトを作成しよう</h2>
+						<h3>このレッスンで学ぶこと</h3>
+						<p>iMessageアプリの完成イメージを確認します。文章を入力し変換ボタン押すと大阪弁風に変換されます。<br>変換された文章は、iMessageの文章入力エリア挿入されます。<br>プロジェクトの作成を行います。</p>
 						
+						<h3>できるようになること</h3>
+						<p>これから作るアプリの処理イメージできるようになります。<br>iMessageアプリのプロジェクト作成方法を理解できるようになります。</p>
 						
+
 						<hr>
 						<div class="booklink-box" style="text-align:left;padding-bottom:20px;font-size:small;/zoom: 1;overflow: hidden;"><div class="booklink-image" style="float:left;margin:0 15px 10px 0;"><a href="http://www.amazon.co.jp/exec/obidos/asin/4797387149/officialsiteswift-22/" target="_blank" rel="nofollow" ><img src="https://images-fe.ssl-images-amazon.com/images/I/51tP8W6KckL.jpg" style="border: none;" /></a></div><div class="booklink-info" style="line-height:120%;/zoom: 1;overflow: hidden;"><div class="booklink-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/asin/4797387149/officialsiteswift-22/" target="_blank" rel="nofollow" >これからつくる iPhoneアプリ開発入門 ~Swiftではじめるプログラミングの第一歩~</a><div class="booklink-powered-date" style="font-size:8pt;margin-top:5px;font-family:verdana;line-height:120%">posted with <a href="http://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail" style="margin-bottom:5px;">藤 治仁,徳弘 佑衣,小林 加奈子,小林 由憲 SBクリエイティブ 2016-10-26    </div><div class="booklink-link2" style="margin-top:10px;"><div class="shoplinkamazon" style="margin:5px 0"><a href="http://www.amazon.co.jp/exec/obidos/asin/4797387149/officialsiteswift-22/" target="_blank" rel="nofollow" >Amazonで探す</a></div><div class="shoplinkkindle" style="margin:5px 0"><a href="http://www.amazon.co.jp/gp/search?keywords=%82%B1%82%EA%82%A9%82%E7%82%C2%82%AD%82%E9%20iPhone%83A%83v%83%8A%8AJ%94%AD%93%FC%96%E5%20~Swift%82%C5%82%CD%82%B6%82%DF%82%E9%83v%83%8D%83O%83%89%83~%83%93%83O%82%CC%91%E6%88%EA%95%E0~&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=officialsiteswift-22" target="_blank" rel="nofollow" >Kindleで探す</a></div><div class="shoplinkrakuten" style="margin:5px 0"><a href="http://c.af.moshimo.com/af/c/click?a_id=640352&p_id=56&pc_id=56&pl_id=637&s_v=b5Rz2P0601xu&url=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14462591%2F" target="_blank" rel="nofollow" >楽天ブックスで探す</a><img src="http://i.af.moshimo.com/af/i/impression?a_id=640352&p_id=56&pc_id=56&pl_id=637" width="1" height="1" style="border:none;"></div>                         	   	  	  	</div></div><div class="booklink-footer" style="clear: left"></div></div>
 					</div>
