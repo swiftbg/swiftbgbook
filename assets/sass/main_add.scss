@@ -44,7 +44,8 @@ ul.style-none li{
 }
 
 .clearfix {
-  clear: left after;
+  overflow: hidden;
+  zoom: 1;	
 }
 
 #wrapper>*>.inner {
@@ -56,7 +57,7 @@ ul.style-none li{
 }
 
 .image.left.appicon img, .image.right.appicon img{
-	width: 200px;	
+	width: 150px;	
 }
 
 //================================================
