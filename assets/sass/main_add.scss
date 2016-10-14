@@ -69,7 +69,6 @@ ul.style-none li{
 .image.left.appicon img, .image.right.appicon img{
 	width: 150px;	
 }
-
 a{
 	color: #2c6ebd;
 	&:hover img{
@@ -77,6 +76,9 @@ a{
 	}
 }
 
+P{
+	text-indent: 1rem;
+}
 //================================================
 // 忍者おまとめボタン　カスタマイズ
 //================================================
