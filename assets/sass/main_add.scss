@@ -70,8 +70,11 @@ ul.style-none li{
 	width: 150px;	
 }
 
-a:hover img {
-	opacity: 0.7;
+a{
+	color: #2c6ebd;
+	&:hover img{
+		opacity: 0.7;
+	}
 }
 
 //================================================
