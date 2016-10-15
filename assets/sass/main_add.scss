@@ -18,12 +18,15 @@ h2{
 }
 h3{
 	font-size: 1.75rem; // 28px
+	margin-bottom: 1.75rem;
 }
 h4{
 	font-size: 1.5rem; // 24px
+	margin-bottom: 1.5rem;
 }
 h5{
 	font-size: 1.25rem; // 20px
+	margin-bottom: 1.25rem;
 }
 // 画像編
 img{
@@ -36,6 +39,9 @@ img{
 	}
 }
 
+ol{
+	margin: 0 0 3rem 1rem;
+}
 dl{
 	dt {
 		margin: 0 0 0.5rem 0;
