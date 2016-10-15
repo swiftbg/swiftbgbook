@@ -40,6 +40,9 @@ dl{
 	dt {
 		margin: 0 0 0.5rem 0;
 	}
+	dd{
+		display: list-item;
+	}
 }
 
 ul.style-none li{
