@@ -249,7 +249,11 @@ a{
 	}
 	.sns-area{
 		margin-top: 2.5rem;
-	}
+		.tw-widgets{
+			margin: 0 auto;
+			max-width: 450px;
+		}
+	} 
 }
 //================================================
 // article
