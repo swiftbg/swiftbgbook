@@ -258,6 +258,16 @@ a{
 	} 
 	.news-area{
 		margin-top: 2.5rem;
+		p {
+			margin-bottom: 1.5rem;
+		}
+		dt{
+			padding: 0.25rem 0 0.2rem 0.75rem;
+			border-left: 4px solid #fa4f31;
+		}
+		hr{
+			color:orange;
+		}
 	} 	
 }
 //================================================
