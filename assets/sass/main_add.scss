@@ -258,15 +258,14 @@ a{
 	} 
 	.news-area{
 		margin-top: 2.5rem;
+		border-top: 1px solid orange;
+		border-bottom: 1px solid orange;
 		p {
 			margin-bottom: 1.5rem;
 		}
 		dt{
-			padding: 0.25rem 0 0.2rem 0.75rem;
-			border-left: 4px solid #fa4f31;
-		}
-		hr{
-			color:orange;
+			padding: 0.1rem 0 0.1rem 0.5rem;
+			border-left: 3px solid #fa4f31;
 		}
 	} 	
 }
