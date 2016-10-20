@@ -167,7 +167,7 @@ a{
 			margin-right: 10px;
 		}				
   }
-  .shoplinkrakuten a,.shoplinkrakukobo a{
+  .shoplinkrakuten a{
       background-color: #bf0000;
     &:hover{
       background-color: lighten(#bf0000,10%) ;      
@@ -179,6 +179,22 @@ a{
 			margin-right: 10px;			
 		}		
   }
+  .shoplinkrakukobo a{
+    font-color:#bf0000;
+		background-color: #ecdada;
+		border: 1px solid #bf0000;
+    &:hover{
+      background-color: lighten(#ecdada,10%);      
+			border: 1px solid  lighten(#bf0000,10%);
+    }
+		&:before {
+			content: " \f10a";
+			font-family: FontAwesome;
+			font-size: 1.25rem;
+			margin-right: 10px;			
+		}		
+  }
+	
   .shoplinkkino a{
       background-color: #004097;
     &:hover{
