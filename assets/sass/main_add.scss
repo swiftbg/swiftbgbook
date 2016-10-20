@@ -122,7 +122,7 @@ a{
       font-size: 0.8rem;      
     }
   }
-  .shoplinkamazon,.shoplinkkindle,.shoplinkrakuten{
+  .shoplinkamazon,.shoplinkkindle,.shoplinkrakuten,.shoplinkrakukobo,.shoplinkseven,.shoplinkbk1,.shoplinkehon,.shoplinkkino{
 		background: none !important;
 		margin: 0 5px 5px 0 !important;
 		padding:0 !important;
@@ -165,7 +165,7 @@ a{
 			margin-right: 10px;
 		}				
   }
-  .shoplinkrakuten a {
+  .shoplinkrakuten a,.shoplinkrakukobo a{
       background-color: #bf0000;
     &:hover{
       background-color: lighten(#bf0000,10%) ;      
@@ -177,6 +177,55 @@ a{
 			margin-right: 10px;			
 		}		
   }
+  .shoplinkkino a{
+      background-color: #004097;
+    &:hover{
+      background-color: lighten(#004097,10%) ;      
+    }
+		&:before {
+			content: " \f02d";
+			font-family: FontAwesome;
+			font-size: 1.25rem;
+			margin-right: 10px;			
+		}		
+  }	
+  .shoplinkehon a{
+      background-color: #000066;
+    &:hover{
+      background-color: lighten(#000066,10%) ;      
+    }
+		&:before {
+			content: " \f282";
+			font-family: FontAwesome;
+			font-size: 1.25rem;
+			margin-right: 10px;			
+		}		
+  }
+  .shoplinkbk1 a{
+      background-color: #0085cd;
+    &:hover{
+      background-color: lighten(#0085cd,10%) ;      
+    }
+		&:before {
+			content: " \f1dc";
+			font-family: FontAwesome;
+			font-size: 1.25rem;
+			margin-right: 10px;			
+		}		
+  }
+ 	.shoplinkseven a{
+      background-color: #bf0000;
+    &:hover{
+      background-color: lighten(#bf0000,10%) ;      
+    }
+		&:before {
+			content: " \f28a";
+			font-family: FontAwesome;
+			font-size: 1.25rem;
+			margin-right: 10px;			
+		}		
+  }
+	
 }
 
 #header-title{
