@@ -136,10 +136,10 @@ a{
       text-decoration: none;
       font-weight: bold;
       text-decoration: none;
-      color: white !important;
+      color: white;
       font-size: 1rem;
       &:hover{
-        color: white !important;
+        color: white;
       }
     }
   }
@@ -180,10 +180,11 @@ a{
 		}		
   }
   .shoplinkrakukobo a{
-    color:#bf0000 !important;
+    color:#bf0000;
 		background-color: #ecdada;
 		border: 1px solid #bf0000;
     &:hover{
+			color:#bf0000;
       background-color: lighten(#ecdada,10%);      
 			border: 1px solid  lighten(#bf0000,10%);
     }
