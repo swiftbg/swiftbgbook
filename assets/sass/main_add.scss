@@ -291,6 +291,7 @@ a{
 	background-size: auto 360px;
 	// ヨメレバ
 	.booklink-box{
+		width: 70%;
 		.booklink-name{
 			a {
 				font-size: 0.875rem;
@@ -360,6 +361,10 @@ a{
 	}
 	.home #wrapper {
 		background: none;
+		// ヨメレバ
+		.booklink-box{
+			width: 100%;
+		}
 		.sns-area{
 			display:none;
 		} 
