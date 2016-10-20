@@ -122,13 +122,15 @@ a{
       font-size: 0.8rem;      
     }
   }
-  .shoplinkamazon,.shoplinkkindle,.shoplinkrakuten,.shoplinkrakukobo,.shoplinkseven,.shoplinkbk1,.shoplinkehon,.shoplinkkino{
+	h5 {
+		margin-bottom: 0.5rem;
+	} .shoplinkamazon,.shoplinkkindle,.shoplinkrakuten,.shoplinkrakukobo,.shoplinkseven,.shoplinkbk1,.shoplinkehon,.shoplinkkino{
 		background: none !important;
 		margin: 0 5px 5px 0 !important;
 		padding:0 !important;
     display: inline-block;
     a {
-      padding: 12px 8px;
+      padding: 12px 10px 12px 8px;
       display: inline-block;
       margin-bottom: 3px;
       text-decoration: none;
