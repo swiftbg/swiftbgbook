@@ -136,10 +136,10 @@ a{
       text-decoration: none;
       font-weight: bold;
       text-decoration: none;
-      color: white;
+      color: white !important;
       font-size: 1rem;
       &:hover{
-        color: white;
+        color: white !important;
       }
     }
   }
@@ -180,13 +180,9 @@ a{
 		}		
   }
   .shoplinkrakukobo a{
-    color:#bf0000;
-		background-color: #ecdada;
-		border: 1px solid #bf0000;
+    background-color: #c2272d;
     &:hover{
-			color:#bf0000;
-      background-color: lighten(#ecdada,10%);      
-			border: 1px solid  lighten(#bf0000,10%);
+      background-color: lighten(#c2272d,10%) ;      
     }
 		&:before {
 			content: " \f10a";
@@ -194,8 +190,7 @@ a{
 			font-size: 1.25rem;
 			margin-right: 10px;			
 		}		
-  }
-	
+  }	
   .shoplinkkino a{
       background-color: #004097;
     &:hover{
