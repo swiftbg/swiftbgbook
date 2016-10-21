@@ -244,8 +244,12 @@ a{
 
 // ポチレバレイアウト
 ul.app-intro{
+	display: flex;
 	li{
 		display: inline-block;
+		&:first-child{
+			width: 40%;
+		}
 	}
 }
 
@@ -379,6 +383,17 @@ ul.app-intro{
 // max-width: 980px
 //================================================
 @media screen and (max-width: 980px){
+	// ポチレバレイアウト
+	ul.app-intro{
+		display: block;
+		li{
+			display: inline-block;
+			&:first-child{
+				width: 100%;
+			}
+		}
+	}
+	
 	#header-title{
 		width: 80%;
 	}
