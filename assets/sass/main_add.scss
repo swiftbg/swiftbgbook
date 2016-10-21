@@ -242,6 +242,14 @@ a{
 	
 }
 
+// ポチレバレイアウト
+ul.app-intro{
+	li{
+		display: inline-block;
+	}
+}
+
+
 #header-title{
 	width: 60%;
 }
