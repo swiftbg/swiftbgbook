@@ -98,6 +98,8 @@ hr{
   display: flex;	
 	-webkit-flex-wrap: wrap; /* Safari */
 	flex-wrap:         wrap;
+  -webkit-justify-content: space-between; /* Safari */
+  justify-content:         space-between;	
 	&-item{
 		width: 320px;
 		max-width: 100%;
