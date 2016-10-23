@@ -92,6 +92,14 @@ hr{
 .tiles article>.image:after{
 	background-image: none;
 }
+
+.tweet-box{
+	display:flex;
+	&-item{
+		width: 320px;
+		max-width: 100%;
+	}
+}
 //================================================
 // 忍者おまとめボタン　カスタマイズ
 //================================================
