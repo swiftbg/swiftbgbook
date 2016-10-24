@@ -257,13 +257,17 @@ hr{
 	
 }
 
-// ポチレバレイアウト
+// アプリ紹介レイアウト
 ul.app-intro{
-	display: flex;
+	width: 100%;
+	overflow: hidden;
 	li{
 		display: inline-block;
 		&:first-child{
-			width: 40%;
+			width: 30%;
+		}
+		&:nth-child(2){
+			width: 70%;
 		}
 	}
 }
