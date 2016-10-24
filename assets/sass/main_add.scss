@@ -262,12 +262,12 @@ ul.app-intro{
 	width: 100%;
 	overflow: hidden;
 	li{
-		display: inline-block;
+		float: left;
 		&:first-child{
-			width: 30%;
+			width: 20%;
 		}
 		&:nth-child(2){
-			width: 70%;
+			width: 78%;
 		}
 	}
 }
