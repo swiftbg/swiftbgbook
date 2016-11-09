@@ -45,10 +45,11 @@ ol{
 }
 dl{
 	dt {
-		margin: 0 0 0.5rem 0;
+		margin: 0 0 0.25rem 0;
 	}
 	dd{
 		margin-left: 1rem;
+		margin-bottom: 0.5rem;
 	}
 	&.list-style dd{
 		display: list-item;
