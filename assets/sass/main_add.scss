@@ -275,6 +275,15 @@ ul.app-intro{
 	}
 }
 
+// トップページに表示する重要な広告
+.priority-ads{
+	border: 1px gray dashed;
+	padding: 1rem;
+	text-align: left;
+	img {
+		width: 80%;
+	}
+}
 
 #header-title{
 	width: 60%;
