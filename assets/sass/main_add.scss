@@ -280,8 +280,8 @@ ul.app-intro{
 	border: 1px gray dashed;
 	padding: 1rem 1rem 0;
 	text-align: left;
-	a{
-		display: inline-block;
+	a,span{
+		display: block;
 	}
 }
 
