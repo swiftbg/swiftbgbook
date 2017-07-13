@@ -294,16 +294,16 @@ ul.app-intro{
 	#header-title{
 		width: 80%;
 	}
-	.home #wrapper {
-		background: none;
-		// ヨメレバ
-		.booklink-box{
-			width: 100%;
-		}
-		.sns-area{
-			display:none;
-		} 
-	}
+    .home #wrapper {
+      background: none;
+      // ヨメレバ
+      .booklink-box{
+        width: 100%;
+      }
+      .sns-area{
+        display:none;
+      } 
+    }
 }
 //================================================
 // max-width: 480px
