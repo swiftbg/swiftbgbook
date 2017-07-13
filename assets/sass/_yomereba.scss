@@ -1,0 +1,159 @@
+//================================================
+// ヨメレバ　カスタマイズ
+//================================================
+//  
+// ヨメレバから次のオプションでHTMLを取得する
+// 
+// 画像大　で取得（高い解像度への対応）
+// レイアウト        amazlet風-2(cssカスタマイズ用)
+// ショップアイコン   なし
+// 
+@mixin yomereba{
+  .cstmreba > .booklink-box{
+    overflow: hidden;
+    .booklink-image{
+      width: 7.75rem;
+      float: left;
+      margin-right: 1rem;
+    }
+    .booklink-name{
+      & > a {
+        font-size: 1.2rem;
+        line-height: 1.4;
+      }
+      & > p {
+        padding:0;
+      }
+      .booklink-powered-date {
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .booklink-detail {
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+    .shoplinkamazon,.shoplinkkindle,.shoplinkrakuten,.shoplinkrakukobo,.shoplinkkino,.shoplinkehon,.shoplinkbk1,.shoplinkseven{
+      background: none !important;
+      display: inline-block;
+      margin-bottom: 0.25rem;
+      padding:0 !important;
+      a {
+        padding:0.25rem 0.375rem 0.375rem;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+        text-decoration: none;
+        color: white !important;
+        font-size: 1rem;
+        &:hover{
+          color: white !important;
+        }
+      }
+    }
+    .shoplinkamazon a {
+      $amazon_color:#232f3e;
+      background-color: $amazon_color ;
+      &:hover{
+        background-color: lighten($amazon_color,15%) ;      
+      }
+      &:before {
+        content: " \f270";
+        font-family: FontAwesome;
+        font-size: 1.25rem;
+        margin-right: 0.624rem;
+      }		
+    }
+    .shoplinkkindle a {
+      $kindle_color:#ED6C18;
+      background-color: $kindle_color ;
+      &:hover{
+        background-color: lighten($kindle_color,10%) ;      
+      }
+      &:before {
+        content: " \f10a";
+        font-family: FontAwesome;
+        font-size: 1.25rem;
+        margin-right: 0.624rem;
+      }				
+    }
+    .shoplinkrakuten a {
+      $rakuten_color:#bf0000;
+      background-color: $rakuten_color;
+      &:hover{
+        background-color: lighten($rakuten_color,10%) ;      
+      }
+      &:before {
+        content: " \f25d";
+        font-family: FontAwesome;
+        font-size: 1.25rem;
+        margin-right: 0.624rem;			
+      }		
+    }
+    .shoplinkrakukobo a {
+      $rakukobo_color:#bf0000;
+      background-color: $rakukobo_color;
+      &:hover{
+        background-color: lighten($rakukobo_color,10%) ;      
+      }
+      &:before {
+        content: " \f10a";
+        font-family: FontAwesome;
+        font-size: 1.25rem;
+        margin-right: 0.624rem;			
+      }		
+    }
+    .shoplinkkino a{
+      $kino_color: #004097;
+      background-color: $kino_color;
+      &:hover{
+        background-color: lighten($kino_color,10%) ;      
+      }
+      &:before {
+        content: " \f02d";
+        font-family: FontAwesome;
+        font-size: 1.25rem;
+        margin-right: 0.624rem;			
+      }		
+    }	
+    .shoplinkehon a{
+      $ehon_color:#000066;
+      background-color: $ehon_color;
+      &:hover{
+        background-color: lighten($ehon_color,10%) ;      
+      }
+      &:before {
+        content: " \f282";
+        font-family: FontAwesome;
+        font-size: 1.25rem;
+        margin-right: 0.624rem;			
+      }		
+    }
+    .shoplinkbk1 a{
+      $bk1_color:#0085cd;
+      background-color: $bk1_color;
+      &:hover{
+        background-color: lighten($bk1_color,10%) ;      
+      }
+      &:before {
+        content: " \f1dc";
+        font-family: FontAwesome;
+        font-size: 1.25rem;
+        margin-right: 0.624rem;
+      }		
+    }
+    .shoplinkseven a{
+      $seven_color:#05883c;
+      background-color: $seven_color;
+      &:hover{
+        background-color: lighten($seven_color,10%) ;      
+      }
+      &:before {
+        content: " \f28a";
+        font-family: FontAwesome;
+        font-size: 1.25rem;
+        margin-right: 0.624rem;
+      }		
+    }
+  }
+}

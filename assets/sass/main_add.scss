@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import 'config';
+@import 'yomereba';
 
 html { 
   font-size: 16px;
@@ -114,148 +115,11 @@ hr{
 	display: block;
 }		
 
-
 //================================================
 // ヨメレバ　カスタマイズ
 //================================================
-//  
-// 次のCSSフォーマットに対応している。
-// 画像大　で取得（高い解像度への対応）
-// レイアウト			amazlet風-3
-// ショップアイコン　なし
-// 
-.booklink-box{
-	// 高い解像度への対応
-	.booklink-image{
-		width: 121px;
-	}
-  .booklink-name{
-    a {
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-    .booklink-powered-date a{
-      font-size: 0.8rem;      
-    }
-  }
-	h5 {
-		margin-bottom: 0.5rem;
-	} .shoplinkamazon,.shoplinkkindle,.shoplinkrakuten,.shoplinkrakukobo,.shoplinkseven,.shoplinkbk1,.shoplinkehon,.shoplinkkino{
-		background: none !important;
-		margin: 0 5px 5px 0 !important;
-		padding:0 !important;
-    display: inline-block;
-    a {
-      padding: 10px 10px 10px 8px;
-      display: inline-block;
-      margin-bottom: 3px;
-      text-decoration: none;
-      font-weight: bold;
-      text-decoration: none;
-      color: white !important;
-      font-size: 1rem;
-      &:hover{
-        color: white !important;
-      }
-    }
-  }
-  .shoplinkamazon a {
-    background-color: #232f3e ;
-    &:hover{
-      background-color: lighten(#232f3e,15%) ;      
-    }
-		&:before {
-			content: " \f270";
-			font-family: FontAwesome;
-			font-size: 1.25rem;
-			margin-right: 10px;
-		}		
-  }
-  .shoplinkkindle a {
-    background-color: #ED6C18 ;
-    &:hover{
-      background-color: lighten(#ED6C18,10%) ;      
-    }
-		&:before {
-			content: " \f10a";
-			font-family: FontAwesome;
-			font-size: 1.25rem;
-			margin-right: 10px;
-		}				
-  }
-  .shoplinkrakuten a{
-      background-color: #bf0000;
-    &:hover{
-      background-color: lighten(#bf0000,10%) ;      
-    }
-		&:before {
-			content: " \f25d";
-			font-family: FontAwesome;
-			font-size: 1.25rem;
-			margin-right: 10px;			
-		}		
-  }
-  .shoplinkrakukobo a{
-    background-color: #c2272d;
-    &:hover{
-      background-color: lighten(#c2272d,10%) ;      
-    }
-		&:before {
-			content: " \f10a";
-			font-family: FontAwesome;
-			font-size: 1.25rem;
-			margin-right: 10px;			
-		}		
-  }	
-  .shoplinkkino a{
-      background-color: #004097;
-    &:hover{
-      background-color: lighten(#004097,10%) ;      
-    }
-		&:before {
-			content: " \f02d";
-			font-family: FontAwesome;
-			font-size: 1.25rem;
-			margin-right: 10px;			
-		}		
-  }	
-  .shoplinkehon a{
-      background-color: #000066;
-    &:hover{
-      background-color: lighten(#000066,10%) ;      
-    }
-		&:before {
-			content: " \f282";
-			font-family: FontAwesome;
-			font-size: 1.25rem;
-			margin-right: 10px;			
-		}		
-  }
-  .shoplinkbk1 a{
-      background-color: #0085cd;
-    &:hover{
-      background-color: lighten(#0085cd,10%) ;      
-    }
-		&:before {
-			content: " \f1dc";
-			font-family: FontAwesome;
-			font-size: 1.25rem;
-			margin-right: 10px;			
-		}		
-  }
- 	.shoplinkseven a{
-      background-color: #05883c;
-    &:hover{
-      background-color: lighten(#05883c,10%) ;      
-    }
-		&:before {
-			content: " \f28a";
-			font-family: FontAwesome;
-			font-size: 1.25rem;
-			margin-right: 10px;			
-		}		
-  }
-	
+#main{
+  @include yomereba;
 }
 
 // アプリ紹介レイアウト
