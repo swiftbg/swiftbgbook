@@ -19,10 +19,17 @@
     .booklink-name{
       & > a {
         font-size: 1.2rem;
+        display: inline-block;
         line-height: 1.4;
+        
       }
       & > p {
         padding:0;
+      }
+      & > img{
+        // 計測タグ
+        height: 1px;
+        width: 1px;
       }
       .booklink-powered-date{
         font-size: 0.75rem;

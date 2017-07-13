@@ -120,6 +120,9 @@ hr{
 //================================================
 #main{
   @include yomereba;
+  .cstmreba {
+    margin-bottom: 2rem;
+  }  
 }
 
 // アプリ紹介レイアウト
