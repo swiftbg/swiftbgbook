@@ -24,16 +24,24 @@
       & > p {
         padding:0;
       }
-      .booklink-powered-date {
+      .booklink-powered-date{
         font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+        a {
+          font-size: 0.75rem;
+        }
+      }
+    }
+    .booklink-link2{
+      margin-left: 8.8rem;
+      h5{
         margin-bottom: 0.5rem;
       }
     }
     .booklink-detail {
       font-size: 0.875rem;
       margin-bottom: 0.5rem;
-    }
-    .shoplinkamazon,.shoplinkkindle,.shoplinkrakuten,.shoplinkrakukobo,.shoplinkkino,.shoplinkehon,.shoplinkbk1,.shoplinkseven{
+    } .shoplinkamazon,.shoplinkkindle,.shoplinkrakuten,.shoplinkrakukobo,.shoplinkkino,.shoplinkehon,.shoplinkbk1,.shoplinkseven{
       background: none !important;
       display: inline-block;
       margin-bottom: 0.25rem;
